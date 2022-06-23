@@ -1,0 +1,343 @@
+@import './styles.scss';
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+[data-destination], [data-box], [data-mtexts]{
+    display: none;
+}
+
+.section-activated{
+        .m-actived{
+            display: flex;
+        .box{
+            display: block;
+            animation: box-animation .6s forwards;
+            span{
+                margin-right: 28px;
+                @include navText;
+                font-weight: bold;
+                color: rgba(255, 255, 255, 0.374);
+                font-size: 28px;
+            }
+            h6{
+                margin-left: 145px;
+                @include subHeading1;
+                font-family: 'Barlow Condensed', sans-serif;
+                font-weight: 100;
+                letter-spacing: 4.72px;
+            }
+        }
+        img{
+            // width: 445px;
+            // height: 445px;
+            margin-top: 98px;
+            margin-left: 30%;
+        }
+        ul, a{
+            display: flex;
+            @include navText;
+            font-size: 26px;
+        }
+        li{
+            margin-right: 35px;
+        }
+    }
+    .moons-infos{
+        margin-top: 200px;
+        margin-left: 24%;
+        .moon-texts{
+            display: block;
+            animation: box-animation .6s forwards;
+            h1{
+                @include headings(100px, 0px);
+                font-weight: 100;
+                margin-top: 37px;
+            }
+            p{
+                @include bodyText;
+                font-weight: 100;
+                color: $second-color;
+                letter-spacing: 1.5px;
+            }
+            .moons-divider{
+                margin-top: 54px;
+                width: 80.5%;
+                height: 1px;
+                background-color: #383B4B;
+            }
+            .moons-dl{
+                display: flex;
+                width: 80.5%;
+                justify-content: space-between;
+                margin-top: 28px;
+                .infos{
+                    @include navText;
+                    color: $second-color;
+                    text-align: left;
+                    font-weight: 100;
+                }
+                p{
+                    @include subHeading1;
+                    font-size: 38px;
+                    margin-top: 22px;
+                }
+        }
+        }
+    }
+}
+
+// RESPONSIVE MOON
+.section-activated {
+    .m-actived {
+        // Laptop Height configs
+        @include media(laptop-height) {
+            [data-box] {
+                h6 {
+                    margin-top: 0px;
+                }
+                img {
+                    margin-top: 0px;
+                    @include moon-media(m-medium) {
+                        width: 210px;
+                        height: 210px;
+                        margin-left: 0%;
+                    }
+                }
+            }
+        }
+
+        // Desktop Height configs
+        @include media(desktop-height) {
+            @include moon-media(m-medium) {
+                display: block;
+            }
+
+            [data-box] {
+                @include moon-media(m-medium) {
+                    text-align: center;
+                    h6, span{
+                        text-align: center;
+                        margin-left: 0px;
+                        margin-top: 20px;
+                        font-size: 18px;
+                    }
+                }
+                img {
+                    @include moon-media(m-large) {
+                        width: 300px;
+                        height: 300px;
+                        margin-top: 10px;
+                    }
+    
+                    @include moon-media(m-medium) {
+                        width: 210px;
+                        height: 210px;
+                        margin-left: 0%;
+                    }
+                }
+            }
+
+            h6, span {
+                @include moon-media(m-medium) {
+                    font-size: 22px;
+                    text-align: left;
+                }
+
+                @include moon-media(m-small) {
+                    margin-left: 0px;
+                    text-align: left;
+                    font-size: 16px;
+                }
+            }
+
+            .moons-infos {
+                @include moon-media(m-large) {
+                    margin-top: 100px;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    text-align: center;
+                }
+
+                @include moon-media(m-medium) {
+                    margin-top: 20px;
+                }
+
+                ul, a {
+                    @include moon-media(m-large) {
+                        font-size: 16px;
+                        justify-content: center;
+                    }
+                }
+                li{
+                    @include moon-media(m-small){
+                        margin-right: 15px;
+                    }
+                }
+
+                h1 {
+                    @include moon-media(m-medium) {
+                        text-align: center;
+                        font-size: 40px;
+                    }
+                }
+
+                p {
+                    @include moon-media(m-large) {
+                        font-size: 18px;
+                    }
+
+                    @include moon-media(m-medium) {
+                        text-align: center;
+                    }
+
+                    @include moon-media(m-small) {
+                        font-size: 15px;
+                        line-height: 25px;
+                    }
+
+                    .br-active {
+                        @include moon-media(m-small) {
+                            display: none;
+                        }
+                    }
+                }
+
+                .bar-activated {
+                    width: 40px;
+                    height: 4px;
+                    background-color: #fff;
+                }
+
+                .moons-dl {
+                    text-align: center;
+
+                    @include moon-media(m-large) {
+                        width: 50%;
+                        margin-left: 23.5%;
+                    }
+
+                    @include moon-media(m-small) {
+                        display: block;
+                    }
+
+                    .infos {
+                        @include moon-media(m-small) {
+                            text-align: center;
+                            font-size: 16px;
+                            margin-top: 20px;
+                        }
+
+                        p {
+                            @include moon-media(m-large) {
+                                font-size: 28px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+
+                .moons-divider {
+                    @include moon-media(m-large) {
+                        width: 50%;
+                        margin-left: 23.5%;
+                    }
+
+                    @include moon-media(m-small) {
+                        margin-top: 32px;
+                    }
+                }
+
+            }
+        }
+        @include tech-media(nest-responsive){
+            .moon-texts{
+                .br-active{
+                    display: block;
+                }
+            }
+    }
+    }
+}
+
+   // Divider Moons configs with animations
+.bar{
+    margin-top: 12px;
+    height: 4px;
+}
+li:nth-child(1){
+    .bar{
+        background-color: rgba(255, 255, 255, 0.635);
+        animation: bar-animate1 .3s forwards;
+    }
+}
+li:nth-child(2){
+    .bar{
+        background-color: rgba(228, 172, 88, 0.635);
+        animation: bar-animate1 .3s forwards;
+    }
+}
+li:nth-child(3){
+    .bar{
+        background-color: rgba(189, 223, 219, 0.635);
+        animation: bar-animate2 .3s forwards;
+    }
+}
+li:nth-child(4){
+    .bar{
+        background-color: rgba(225, 205, 86, 0.635);
+        animation: bar-animate3 .3s forwards;
+    }
+}
+
+ // Destination animations
+@keyframes box-animation {
+    from {  
+        opacity: 0;
+        transform: translate3d(-100px, 0px, 0px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+@keyframes bar-animate1 {
+    from{
+        width: 1px;
+    }
+    to{
+        width: 55px;
+    }
+}
+
+@keyframes bar-animate2 {
+    from{
+        width: 1px;
+    }
+    to{
+        width: 80px;
+    }
+}
+
+@keyframes bar-animate3 {
+    from{
+        width: 1px;
+    }
+    to{
+        width: 62px;
+    }
+}
+
+@keyframes circle-animation {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+/* line 1, ../projects/space/Main SCSS/styles.scss */
+body,
+main,
+footer,
+p,
+h1,
+ul,
+li {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 11, ../projects/space/Main SCSS/styles.scss */
+ul {
+  list-style: none;
+}
+
+/* line 14, ../projects/space/Main SCSS/styles.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 18, ../projects/space/Main SCSS/styles.scss */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* line 3, ../projects/space/Main SCSS/technology.scss */
+[data-tech="vehicles-paragraphs"], [data-imgTech="t-img"],
+[data-imgTech="spacePort-img"], [data-responsiveTech="imgResponsive"] {
+  display: none;
+}
+
+/* line 9, ../projects/space/Main SCSS/technology.scss */
+.section-activated .vehicle {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 13, ../projects/space/Main SCSS/technology.scss */
+.section-activated .vehicle h6 {
+  margin-top: 60px;
+  margin-left: 145px;
+  font-family: 'Bellefair', serif;
+  font-weight: regular;
+  font-size: 28px;
+  color: #FFFFFF;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 100;
+  letter-spacing: 4.72px;
+}
+
+/* line 22, ../projects/space/Main SCSS/technology.scss */
+.section-activated .vehicle span {
+  margin-right: 28px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: regular;
+  font-size: 18px;
+  letter-spacing: 2.7px;
+  color: #FFFFFF;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.374);
+  font-size: 28px;
+}
+
+/* line 30, ../projects/space/Main SCSS/technology.scss */
+.section-activated .vehicle ul {
+  display: block;
+  margin-left: 145px;
+}
+
+/* line 35, ../projects/space/Main SCSS/technology.scss */
+.section-activated .vehicle .nav-actived {
+  background-color: #c9d1e2;
+  animation: navTech-animation .6s forwards;
+}
+
+/* line 38, ../projects/space/Main SCSS/technology.scss */
+.section-activated .vehicle .nav-actived p {
+  color: #151414;
+  font-weight: bold;
+}
+
+@keyframes navTech-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* line 52, ../projects/space/Main SCSS/technology.scss */
+.section-activated .vehicle li {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 32px;
+  border-radius: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.374);
+  text-align: center;
+  font-family: 'Bellefair', serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: #0B0D17;
+  font-weight: 500;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+/* line 64, ../projects/space/Main SCSS/technology.scss */
+.section-activated .vehicle li p {
+  padding-top: 20px;
+  font-size: 32px;
+}
+
+/* line 70, ../projects/space/Main SCSS/technology.scss */
+.section-activated .vehicle .vehicles-texts {
+  display: flex;
+}
+
+/* line 73, ../projects/space/Main SCSS/technology.scss */
+.section-activated .vehicle .vehicles-texts .tech-active {
+  display: block;
+  margin-left: 78px;
+  animation: box-animation .6s forwards;
+}
+
+/* line 78, ../projects/space/Main SCSS/technology.scss */
+.section-activated .vehicle .vehicles-texts .tech-active h7 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: regular;
+  font-size: 18px;
+  letter-spacing: 2.7px;
+  color: #FFFFFF;
+  color: #D0D6F9;
+}
+
+/* line 83, ../projects/space/Main SCSS/technology.scss */
+.section-activated .vehicle .vehicles-texts .tech-active h1 {
+  font-family: 'Bellefair', serif;
+  font-weight: regular;
+  font-size: 56px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+/* line 88, ../projects/space/Main SCSS/technology.scss */
+.section-activated .vehicle .vehicles-texts .tech-active p {
+  padding-top: 27px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: regular;
+  font-size: 20px;
+  line-height: 32px;
+  color: #FFFFFF;
+  font-weight: 100;
+  color: #D0D6F9;
+  letter-spacing: 1.5px;
+}
+
+/* line 98, ../projects/space/Main SCSS/technology.scss */
+.section-activated .vehicle .imgTech-active {
+  display: block;
+  margin-top: 138px;
+  max-height: 527px;
+  animation: box-animation .6s forwards;
+}
+
+/* line 105, ../projects/space/Main SCSS/technology.scss */
+.section-activated .vehicle [data-imgTech="spacePort-img"] {
+  margin-top: 138px;
+}
+
+@media screen and (max-width: 1228px) {
+  /* line 115, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle h6, .section-activated .vehicle span {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  /* line 119, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle ul {
+    display: block;
+    margin-left: 20px;
+  }
+  /* line 123, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle li {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 52px;
+  }
+  /* line 128, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle li p {
+    padding-top: 20px;
+    font-size: 22px;
+  }
+  /* line 134, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle [data-imgTech="t-img"] {
+    width: 400px;
+    height: 400px;
+  }
+  /* line 138, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle [data-imgTech="spacePort-img"] {
+    width: auto;
+    height: 340px;
+  }
+  /* line 142, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle .br-active {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* line 113, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle {
+    display: block;
+  }
+  /* line 148, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle [data-imgTech="t-img"], .section-activated .vehicle [data-imgTech="spacePort-img"] {
+    display: none;
+  }
+  /* line 152, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle .responsive-actived {
+    display: block;
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    animation: box-animation .6s forwards;
+  }
+  /* line 160, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle h6, .section-activated .vehicle span {
+    margin-top: 50px;
+  }
+  /* line 164, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle .vehicles-texts {
+    display: block;
+  }
+  /* line 167, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle .vehicles-texts .tech-active {
+    margin-left: 0px;
+  }
+  /* line 170, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle .vehicles-texts ul {
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  /* line 175, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle .vehicles-texts ul li {
+    margin-left: 16px;
+  }
+  /* line 181, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle [data-tech="vehicles-paragraphs"] {
+    text-align: center;
+  }
+  /* line 183, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle [data-tech="vehicles-paragraphs"] .br-active {
+    display: none;
+  }
+  /* line 186, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle [data-tech="vehicles-paragraphs"] h7, .section-activated .vehicle [data-tech="vehicles-paragraphs"] p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* line 190, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle [data-tech="vehicles-paragraphs"] h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  /* line 196, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle h6 {
+    margin-left: 0px;
+    font-size: 16px;
+  }
+  /* line 200, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle span {
+    margin-right: 8px;
+    font-size: 16px;
+  }
+  /* line 206, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle .vehicles-texts [data-tech="vehicles-paragraphs"] h1 {
+    font-size: 48px;
+  }
+  /* line 209, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle .vehicles-texts [data-tech="vehicles-paragraphs"] p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* line 213, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .vehicle .vehicles-texts [data-tech="vehicles-paragraphs"] .br-active {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  /* line 222, ../projects/space/Main SCSS/technology.scss */
+  .section-activated [data-imgTech="t-img"] {
+    width: auto;
+    height: 350px;
+    margin-top: 80px;
+  }
+  /* line 227, ../projects/space/Main SCSS/technology.scss */
+  .section-activated p {
+    font-size: 16px;
+  }
+  /* line 230, ../projects/space/Main SCSS/technology.scss */
+  .section-activated .br-active {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=technology.css.map */

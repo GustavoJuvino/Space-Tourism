@@ -1,0 +1,229 @@
+@import "./styles.scss";
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        margin-top: 30px;
+        margin-left: 50px;
+        width: 48px;
+        height: 48px;
+    }
+    .divider{
+        z-index: 2;
+        position: absolute;
+        left: 8%;
+        margin-top: 40px;
+        width: 44%;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.297);
+        backdrop-filter: blur(1rem);
+    }
+    nav{
+        margin-top: 40px;
+        width: 50%;
+        height: 96px;
+        background: rgba(255, 255, 255, 0.061);
+        backdrop-filter: blur(1rem);
+    }
+    [data-logo]{
+        cursor: pointer;
+    }
+    [data-nav="menu"]{
+        display: block;
+        @include display(small){
+            display: none;
+        }
+    }
+    [data-nav="close"]{
+        display: none;
+    }
+    [data-nav="img"]{
+        display: none;
+    }
+    .mobile-activated{
+        display: block;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+    }
+    .li-activated a{
+        color: white;
+    }
+    li{
+        margin-left: 48px;
+        padding-top: 39px;
+        @include navText;
+        a{
+         @include navText;
+         font-weight: lighter;
+         color: $second-color;
+         &:hover{
+            transition: 0.5s;
+            color: $third-color;
+        }
+        }
+        span{
+            padding-right: 12px;
+            font-weight: 600;
+        }
+    }
+}
+
+// RESPONSIVE
+#header{
+    [data-logo]{
+        @include display(large){
+            margin-left: 20px;
+        }
+    }
+    @include display(large){
+        justify-content: space-between;
+    }
+    img{
+        @include display(small){
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .divider{
+        @include display(large){
+            display: none;
+        }
+        @include display(medium){
+            display: none;
+        }
+    }
+    nav{
+        @include display(large){
+            width: 700px;
+        }
+    }
+    ul{
+        @include display(headerbk){
+            justify-content: start;
+        }
+        @include display(large){
+            justify-content: center;
+        }
+    }
+}
+
+// MENU RESPONSIVE
+#header{
+    .mobile-activated{
+        @include display(small){
+            position: absolute;
+            z-index: 2;
+            right: 0;
+            top: 0px;
+            margin-top: 0px;
+            width: 50%;
+            height: 100vh;
+            backdrop-filter: blur(2rem);
+        }
+        @include display(smartphone){
+            width: 100%;
+        }
+        [data-nav="close"]{
+            display: block;
+            cursor: pointer;
+            margin-left: 70%;
+            margin-top: 60px;
+        }
+        ul{
+            @include display(small){
+                margin-top: 20px; 
+                display: block;
+                text-align: left;
+            }
+        }
+        li{
+            @include display(small){
+                margin-left: 48px;
+                padding-top: 70px;
+                }
+            [data-divider]{
+                @include display(small){
+                    margin-top: 15px;
+                }
+            }
+        }
+    
+    }
+    [data-nav="img"]{
+        @include display(small){
+            display: block;
+            margin-right: 50px;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+    }
+
+// ANIMATION MENU MOBILE
+.mobile-activated {
+    @include display(small) {
+        animation: menu-open .3s forwards;
+    }
+
+    @include display(smartphone) {
+        animation: menu-open-small .3s forwards;
+    }
+}
+@keyframes menu-open {
+    from {
+        opacity: 0;
+        transform: translate3d(100px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes menu-open-small {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+}
+
+
+
+ // Divider and Divider Animations
+ .bar-header{
+    margin-top: 32px;
+    height: 4px;
+    animation: home .5s forwards;
+    background-color: whitesmoke;
+}
+@keyframes home{
+    from{
+        width: 1px;
+    }
+    to{
+        width: 80px;
+    }
+}
+
+li:nth-child(2), li:nth-child(4){
+    .bar-header{
+        animation: destiny .5s forwards;
+    }
+}
+@keyframes destiny{
+    from{
+        width: 1px;
+    }
+    to{
+        width: 138px;
+    }
+}

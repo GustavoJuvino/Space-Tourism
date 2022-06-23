@@ -1,0 +1,360 @@
+@import './styles.scss';
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+[data-crew], [data-person]{
+    display: none;
+}
+
+// DOUGLAS
+.section-activated {
+    .main-crew {
+        display: flex;
+        justify-content: space-between;
+        .crew-activated{
+            display: block;
+            animation: box-animation .6s forwards;
+            h6 {
+                margin-top: 60px;
+                margin-left: 145px;
+                @include subHeading1;
+                font-family: 'Barlow Condensed', sans-serif;
+                font-weight: 100;
+                letter-spacing: 4.72px;
+            }
+            span {
+                margin-right: 28px;
+                @include navText;
+                font-weight: bold;
+                color: rgba(255, 255, 255, 0.374);
+                font-size: 28px;
+            }
+            h2 {
+                margin-top: 100px;
+                margin-left: 145px;
+                @include homeButton;
+                font-weight: 500;
+                color: $second-color;
+            }
+            h1 {
+                margin-left: 145px;
+                @include headings(56px, 0px);
+                font-weight: 500;
+                color: $third-color;
+            }
+            p {
+                margin-top: 27px;
+                margin-left: 145px;
+                @include bodyText;
+                font-weight: 100;
+                color: $second-color;
+                letter-spacing: 1.5px;
+            }
+        }
+        .circle{
+            display: flex;
+            margin-left: 105px;
+            margin-top: 80px;
+            [data-circle]{
+                width: 30px;
+                height: 30px;
+                background-color: rgba(255, 255, 255, 0.189);
+                border-radius: 100%;
+                margin-left: 38px;
+                cursor: pointer;
+                transition: 0.9s;
+                &:hover{
+                    background-color: white;
+                }
+            }
+            .actived{
+                background-color: white;
+                animation: circle-animation .1s forwards;
+            }
+        }
+        .img-crew{
+            display: block;
+            animation: box-animation .6s forwards;
+        }
+
+        .douglas-img{
+            margin-top: 168px;
+            margin-right: 100px;
+        }
+        .mark-img{
+            margin-right: 100px;
+            margin-top: 228px;
+        }
+        .victor-img{
+            width: 499px;
+            margin-right: 100px;
+            margin-top: 282px;
+        }
+        .ansari-img{
+            margin-right: 100px;
+            margin-top: 265px;
+        }
+    }
+}
+
+// RESPONSIVE 
+.section-activated{
+    .main-crew{
+        @include crew-media(tablet){
+            display: block;
+            text-align: center;
+        }
+        .crew-texts{
+            @include crew-media(laptop-large){
+                margin-top: 20px;
+                h6{
+                    margin-left: 60px;
+                }
+                h2, h1, p{
+                    margin-left: 60px;
+                }
+                .circle{
+                    margin-left: 35px;
+                }
+                .br-active{
+                    display: contents;
+                }
+            }
+            @include crew-media(laptop-medium){
+                .circle{
+                    margin-top: 40px;
+                    margin-left: 20px;
+                }
+                .br-active{
+                    display: contents;
+                }
+            }
+            @include crew-media(tablet){
+                h6, h2, h1, p{
+                    margin-left: 0px;
+                }
+                h6, span{
+                    font-size: 28px;
+                }
+                h2{
+                    margin-top: 0px;
+                    font-size: 28px;
+                }
+                h1{
+                    font-size: 42px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+                .circle{
+                    display: flex;
+                    justify-content: center;
+                    margin-right: 40px;
+                }
+                .br-active{
+                    display:block;
+
+                }
+            }
+            @include crew-media(smartphone){
+                h6, span{
+                    margin-top: 0px;
+                    font-size: 18px;
+                }
+                h2{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 16px;
+                }
+                h1{
+                    font-size: 20px;
+                }
+                [data-circle]{
+                    width: 15px;
+                    height: 15px;
+                    margin-left: 12%;
+                }
+                .br-active{
+                    display: none;
+                }
+            }
+        }
+        .douglas-img{
+            // Desktop Height Responsive
+            @include media(desktop-height){
+                @include crew-media(laptop-large){
+                    margin-right: 0px;
+                }
+                @include crew-media(laptop-medium){
+                    height: 572px;
+                    width: auto;
+                    margin-top: 210px;
+                }
+                @include crew-media(tablet){
+                    margin-top: 33px;
+                    height: 450px;
+                }
+                @include crew-media(smartphone){
+                    width: 65%;
+                    height: 30%;
+                    margin-top: 158px;
+                }
+            }
+            // Laptop Height Responsive
+            @include media(laptop-height){
+                margin-top: 202px;
+                height: 580px;
+                @include crew-media(laptop-medium){
+                    height: 572px;
+                    width: auto;
+                    margin-top: 210px;
+                }
+                @include crew-media(tablet){
+                    margin-top: 15px;
+                    height: 380px;
+                }
+                @include crew-media(smartphone){
+                    width: 50%;
+                    height: 30%;
+                    margin-top: 10px;
+                }
+        }
+            @include tech-media(nest-responsive){
+                margin-top: 80px;
+            }
+        }
+        .mark-img{
+            // Desktop Height Responsive
+            @include media(desktop-height){
+                @include crew-media(laptop-large){
+                    margin-right: 0px;
+                }
+                @include crew-media(laptop-medium){
+                    margin-top: 369px;
+                    height: 500px;
+                }
+                @include crew-media(tablet){
+                    height: 400px;
+                    margin-top: 88px;
+                    margin-right: 70px;
+                }
+                @include crew-media(smartphone){
+                    width: 65%;
+                    height: 30%;
+                    margin-top: 127px;
+                }
+            }
+            // Laptop Height Responsive
+            @include media(laptop-height){
+                margin-top: 202px;
+                height: 580px;
+                @include crew-media(laptop-medium){
+                    margin-top: 334px;
+                    height: 448px;
+                }
+                @include crew-media(tablet){
+                    height: 370px;
+                    margin-top: 30px;
+                    margin-right: 60px;
+                }
+                @include crew-media(smartphone){
+                    width: 50%;
+                    height: auto;
+                    margin-top: 0px;
+                }
+            }
+        }
+        .victor-img{
+            // Desktop Height Responsive
+            @include media(desktop-height){
+                @include crew-media(laptop-large){
+                    margin-right: 0px;
+                }
+                @include crew-media(laptop-medium){
+                    margin-top: 340px;
+                    width: 450px;
+                    height: auto;
+                }
+                @include crew-media(tablet){
+                    margin-top: 45px;
+                    width: 350px;
+                    height: auto;
+                }
+                @include crew-media(smartphone){
+                    width: 70%;
+                    margin-top: 0px;
+                }
+            }
+            // Laptop Height Responsive
+            @include media(laptop-height){
+                margin-top: 195px;
+                @include crew-media(laptop-large){
+                    margin-right: 0px;
+                }
+                @include crew-media(laptop-medium){
+                    width: 380px;
+                    margin-top: 332px;
+                }
+                @include crew-media(tablet){
+                    margin-top: 30px;
+                    // width: 350px;
+                    width: 285px;
+                    height: auto;
+                }
+                @include crew-media(smartphone){
+                    width: 45%;
+                    height: auto;
+                    margin-top: 0px;
+                }
+            }
+        }
+        .ansari-img{
+            // Desktop Height Responsive
+            @include media(desktop-height){
+                @include crew-media(laptop-large){
+                    margin-right: 0px;
+                }
+                @include crew-media(laptop-medium){
+                    height: 500px;
+                    width: auto;
+                    margin-top: 368px;
+                }
+                @include crew-media(tablet){
+                    margin-top: 22px;
+                    height: 460px;
+                }
+                @include crew-media(smartphone){
+                    width: 85%;
+                    height: auto;
+                }
+            }
+            // Laptop Height Responsive
+            @include media(laptop-height){
+                width: 500px;
+                @include crew-media(laptop-large){
+                    margin-right: 0px;
+                    margin-top: 240px;
+                }
+                @include crew-media(laptop-medium){
+                    margin-top: 330px;
+                    height: 440px;
+                    width: auto;
+                }
+                @include crew-media(tablet){
+                    margin-top: 5px;
+                    height: 380px;
+                }
+                @include crew-media(smartphone){
+                    height: auto;
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+

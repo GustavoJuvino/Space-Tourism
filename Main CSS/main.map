@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../Main SCSS/main.scss"
+	],
+	"sourcesContent": [
+		"@import './header.css';\n@import './home.css';\n@import './destination.css';\n@import './crew.css';\n@import './technology.css';\n\n\n"
+	],
+	"names": [],
+	"mappings": "AAAA,OAAO,CAAP,iBAAO;AACP,OAAO,CAAP,eAAO;AACP,OAAO,CAAP,sBAAO;AACP,OAAO,CAAP,eAAO;AACP,OAAO,CAAP,qBAAO"
+}

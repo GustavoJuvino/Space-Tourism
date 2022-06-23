@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+/* line 1, ../projects/space/Main SCSS/styles.scss */
+body,
+main,
+footer,
+p,
+h1,
+ul,
+li {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 11, ../projects/space/Main SCSS/styles.scss */
+ul {
+  list-style: none;
+}
+
+/* line 14, ../projects/space/Main SCSS/styles.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 18, ../projects/space/Main SCSS/styles.scss */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* line 3, ../projects/space/Main SCSS/home.scss */
+body {
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* line 8, ../projects/space/Main SCSS/home.scss */
+[data-section] {
+  display: none;
+}
+
+/* line 12, ../projects/space/Main SCSS/home.scss */
+.section-activated {
+  display: block;
+  animation: homeAnimation .8s forwards;
+}
+
+/* line 16, ../projects/space/Main SCSS/home.scss */
+.section-activated .space-texts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  margin-left: 190px;
+  text-align: start;
+}
+
+/* line 23, ../projects/space/Main SCSS/home.scss */
+.section-activated .space-texts h5 {
+  font-family: 'Bellefair', serif;
+  font-weight: regular;
+  font-size: 28px;
+  letter-spacing: 4.75px;
+  color: #FFFFFF;
+  font-weight: 100;
+  color: #D0D6F9;
+}
+
+/* line 29, ../projects/space/Main SCSS/home.scss */
+.section-activated .space-texts h1 {
+  font-family: 'Bellefair', serif;
+  font-weight: regular;
+  font-size: 150px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+/* line 35, ../projects/space/Main SCSS/home.scss */
+.section-activated .space-texts p {
+  font-family: 'Barlow', sans-serif;
+  font-weight: regular;
+  font-size: 20px;
+  line-height: 32px;
+  color: #FFFFFF;
+  font-weight: 100;
+  padding-top: 10px;
+  color: #D0D6F9;
+}
+
+/* line 42, ../projects/space/Main SCSS/home.scss */
+.section-activated .space-texts .br-active {
+  display: block;
+}
+
+/* line 47, ../projects/space/Main SCSS/home.scss */
+.section-activated button {
+  margin-top: 180px;
+  margin-right: 190px;
+  width: 274px;
+  height: 274px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  font-family: 'Bellefair', serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: #0B0D17;
+  font-weight: 500;
+}
+
+/* line 57, ../projects/space/Main SCSS/home.scss */
+.section-activated button:hover {
+  transition: 0.5s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0.152);
+}
+
+@keyframes homeAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1228px) {
+  /* line 75, ../projects/space/Main SCSS/home.scss */
+  .section-activated .space-texts {
+    margin-left: 0px;
+  }
+  /* line 79, ../projects/space/Main SCSS/home.scss */
+  .section-activated .space-texts button {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  /* line 75, ../projects/space/Main SCSS/home.scss */
+  .section-activated .space-texts {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  /* line 88, ../projects/space/Main SCSS/home.scss */
+  .section-activated .space-texts h1 {
+    font-size: 88px;
+  }
+  /* line 91, ../projects/space/Main SCSS/home.scss */
+  .section-activated .space-texts button {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  /* line 100, ../projects/space/Main SCSS/home.scss */
+  .section-activated .space-texts h5 {
+    font-size: 20px;
+  }
+  /* line 103, ../projects/space/Main SCSS/home.scss */
+  .section-activated .space-texts h1 {
+    font-size: 60px;
+  }
+  /* line 106, ../projects/space/Main SCSS/home.scss */
+  .section-activated .space-texts .br-active {
+    display: none;
+  }
+  /* line 109, ../projects/space/Main SCSS/home.scss */
+  .section-activated .space-texts button {
+    margin-top: 100px;
+    margin-left: 45px;
+    width: 120px;
+    height: 120px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-height: 922px) {
+  /* line 121, ../projects/space/Main SCSS/home.scss */
+  .space-texts {
+    margin-top: 5.5%;
+  }
+  /* line 124, ../projects/space/Main SCSS/home.scss */
+  .space-texts p .br-active {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,235 @@
+@import './styles.scss';
+
+[data-tech="vehicles-paragraphs"], [data-imgTech="t-img"],
+[data-imgTech="spacePort-img"], [data-responsiveTech="imgResponsive"]{
+    display: none;
+}
+
+.section-activated {
+    .vehicle {
+        display: flex;
+        justify-content: space-between;
+
+        h6 {
+            margin-top: 60px;
+            margin-left: 145px;
+            @include subHeading1;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 100;
+            letter-spacing: 4.72px;
+        }
+
+        span {
+            margin-right: 28px;
+            @include navText;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.374);
+            font-size: 28px;
+        }
+
+        ul {
+            display: block;
+            margin-left: 145px;
+        }
+
+        .nav-actived{
+            background-color: rgb(201, 209, 226);
+            animation: navTech-animation .6s forwards;
+            p{
+                color: rgb(21, 20, 20);
+                font-weight: bold;
+            }
+        }
+        @keyframes navTech-animation {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        li {
+            
+            width: 80px;
+            height: 80px;
+            margin-bottom: 32px;
+            border-radius: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.374);
+            text-align: center;
+            @include homeButton;
+            color: $third-color;
+            cursor: pointer;
+
+            p {
+                padding-top: 20px;
+                font-size: 32px;
+            }
+        }
+
+        .vehicles-texts {
+            display: flex;
+
+            .tech-active {
+                display: block;
+                margin-left: 78px;
+                animation: box-animation .6s forwards;
+
+                h7 {
+                    @include navText;
+                    color: $second-color;
+                }
+
+                h1 {
+                    @include headings(56px, 0px);
+                    font-weight: 500;
+                }
+
+                p {
+                    padding-top: 27px;
+                    @include bodyText;
+                    font-weight: 100;
+                    color: $second-color;
+                    letter-spacing: 1.5px;
+                }
+            }
+        }
+
+        .imgTech-active{
+            display: block;
+            margin-top: 138px;
+            max-height: 527px;
+            animation: box-animation .6s forwards;
+        }
+
+        [data-imgTech="spacePort-img"]{
+            margin-top: 138px;
+        }
+    }
+}
+
+// RESPONSIVE
+.section-activated{
+    .vehicle{
+        @include tech-media(t-large){
+            h6, span{
+                margin-left: 20px;
+                font-size: 16px;
+            }
+            ul {
+                display: block;
+                margin-left: 20px;
+            }
+            li {
+                width: 64px;
+                height: 64px;
+                margin-bottom: 52px;
+    
+                p {
+                    padding-top: 20px;
+                    font-size: 22px;
+                }
+            }
+            
+            [data-imgTech="t-img"]{
+                width: 400px;
+                height: 400px;
+            }
+            [data-imgTech="spacePort-img"]{
+                width: auto;
+                height: 340px;
+            }
+            .br-active{
+                display: none;
+            }
+        }
+        @include tech-media(tablet){
+            display: block;
+            [data-imgTech="t-img"],  [data-imgTech="spacePort-img"]{
+                    display: none;
+                }
+
+                .responsive-actived{
+                    display: block;
+                    width: 100vw;
+                    padding: 0px;
+                    margin: 0px;
+                    animation: box-animation .6s forwards;
+                }
+                
+                h6, span{
+                    margin-top: 50px;
+                }
+
+                .vehicles-texts{
+                    display: block;
+
+                    .tech-active{
+                        margin-left: 0px;
+                    }
+                    ul{
+                        margin-top: 56px;
+                        display: flex;
+                        justify-content: center;
+                        margin-left: 0px;
+                        li{
+                            margin-left: 16px;
+                        }
+                    }
+                }
+
+                [data-tech="vehicles-paragraphs"]{
+                    text-align: center;
+                    .br-active{
+                        display: none;
+                    }
+                    h7, p{
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                    h1{
+                        font-size: 40px;
+                    }
+                }
+        }
+        @include tech-media(smartphone){
+            h6{
+                margin-left: 0px;
+                font-size: 16px;
+            }
+            span{
+                margin-right: 8px;
+                font-size: 16px;
+            }
+            .vehicles-texts{
+                [data-tech="vehicles-paragraphs"]{
+                    h1{
+                        font-size: 48px;
+                    }
+                    p{
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                    .br-active{
+                        display: none;
+                    }
+                }
+            }
+            }
+        }
+        // Just some responsive things related the Nest Hub Max
+        @include tech-media(nest-responsive){
+            [data-imgTech="t-img"]{
+                width: auto;
+                height: 350px;
+                margin-top: 80px;
+            }
+            p{
+                font-size: 16px;
+            }
+            .br-active{
+                display: none;
+            }
+        }
+    }
+

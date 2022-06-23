@@ -1,0 +1,222 @@
+body,
+main,
+footer,
+p,
+h1,
+ul,
+li {
+  padding: 0px;
+  margin: 0px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+// Colors
+$main-color: #0B0D17;
+$second-color: #D0D6F9;
+$third-color: #FFFFFF;
+
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+// font-family: 'Barlow Condensed', sans-serif;
+// font-family: 'Bellefair', serif;
+
+@mixin headings($f-size, $l-spacing){
+    font-family: 'Bellefair', serif;
+    font-weight: regular;
+    font-size: $f-size;
+    letter-spacing: $l-spacing;
+    color: $third-color;
+}
+
+@mixin subHeading1(){
+    font-family: 'Bellefair', serif;
+    font-weight: regular;
+    font-size: 28px;
+    color: $third-color;
+}
+
+@mixin subHeading2(){
+    font-family: 'Barlow', sans-serif;
+    font-weight: regular;
+    font-size: 14px;
+    letter-spacing: 2.35px;
+    color: $third-color;
+}
+
+@mixin navText(){
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: regular;
+    font-size: 18px;
+    letter-spacing: 2.7px;
+    color: $third-color;
+}
+
+@mixin bodyText(){
+    font-family: 'Barlow', sans-serif;
+    font-weight: regular;
+    font-size: 20px;
+    line-height: 32px;
+    color: $third-color;
+}
+
+@mixin homeButton(){
+  font-family: 'Bellefair', serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: $main-color;
+  font-weight: 500;
+}
+
+
+// IMG Background config
+@mixin backgroundConfig(){
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+// ----------------------------------  RESPONSIVE MIXINS ----------------------------------
+
+// Laptop Height and Desktop Height
+$desktop-h: 1368px;       // Responsive Desktop Height
+$laptop-h1: 922px;        // Responsive Laptop Height
+$laptop-h2: 600px;        // Second Responsive Laptop Height 
+
+@mixin media($size){
+  @if $size == laptop-height {
+    @media screen and (max-height: #{$laptop-h1}){
+      @content;
+    }
+  }@else if $size == laptop-height2 {
+    @media screen and (max-height: #{$laptop-h2}){
+      @content;
+    }
+  }@else if $size == desktop-height {
+    @media screen and (max-height: #{$desktop-h}){
+      @content;
+    }
+  }
+}
+
+// HEADER
+$header-bp: 1628px;               // Header Break Points
+
+@mixin headerconfigs($size){
+  @if $size == headerbk {
+    @media screen and (max-width: #{$header-bp}) {
+      @content;
+    }
+  }
+}
+
+// HOME
+$hl-device: 1228px;              // Home Large break point
+$hm-device: 860px;              // Home Medium break point 
+$hs-device: 800px;             // Home Small break point 
+$smartphone-device: 525px;    // Home Smartphone break point 
+
+@mixin display($size) {
+  @if $size == large {
+    @media screen and (max-width: #{$hl-device}) {
+      @content;
+    }
+  }@else if $size == medium {
+    @media screen and (max-width: #{$hm-device}) {
+      @content;
+    }
+  }@else if $size == small {
+    @media screen and (max-width: #{$hs-device}) {
+      @content;
+    }
+  }@else if $size == smartphone {
+    @media screen and (max-width: #{$smartphone-device}) {
+      @content;
+    }
+  }
+}
+
+// DESTINATION
+$ml-device: 1320px;           // Destination - Moon Large Break Point
+$mm-device: 1040px;          // Destination - Moon Medium Break Point
+$ms-device: 590px;          // Destination - Moon Small Break Point
+
+// MOON
+@mixin moon-media($size){
+  @if $size == m-large {
+    @media screen and (max-width: #{$ml-device}){
+      @content; 
+    }
+  }@else if $size == m-medium {
+    @media screen and (max-width: #{$mm-device}){
+      @content; 
+    }
+  }@else if $size == m-small {
+    @media screen and (max-width: #{$ms-device}){
+      @content; 
+    }
+  }
+}
+
+// CREW RESPONSIVE
+$laptop-l: 1316px;         // Crew Responsive Large
+$laptop-m: 1138px;       // Crew Responsive Laptop Medium
+$tablet: 800px;        // Crew Responsive Tablet
+$device: 550px;      // Crew Responsive Device
+
+@mixin crew-media($size){
+  @if $size == laptop-large {
+    @media screen and (max-width: #{$laptop-l}){
+      @content; 
+    }
+  }@else if $size == laptop-medium {
+    @media screen and (max-width: #{$laptop-m}){
+      @content; 
+    }
+  }@else if $size == tablet {
+    @media screen and (max-width: #{$tablet}){
+      @content; 
+    }
+  }@else if $size == smartphone{
+    @media screen and (max-width: #{$device}){
+      @content; 
+    }
+  }
+}
+
+ // TECHNOLOGY
+$t-large: 1228px;        // Technology Responsive Large
+$tablet: 800px;        // Technology Responsive Tablet
+$device: 550px;      // Technology Responsive Device
+$nest: 800px;      // Nest Hub / Nest Hub Max Responsive
+
+@mixin tech-media($size){
+  @if $size == t-large {
+    @media screen and (max-width: #{$t-large}){
+      @content;
+    }
+  }@else if $size == tablet {
+    @media screen and (max-width: #{$tablet}){
+      @content; 
+    }
+  }@else if $size == smartphone{
+    @media screen and (max-width: #{$device}){
+      @content; 
+    }
+  }@else if $size == nest-responsive{
+    @media screen and (max-height: #{$nest}){
+      @content; 
+    }
+  }
+}

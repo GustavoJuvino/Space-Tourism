@@ -1,0 +1,130 @@
+@import './styles.scss';
+
+body{
+    @include backgroundConfig;
+}
+
+// ALL DATA-SECTIONS
+[data-section]{
+    display: none;
+}
+
+.section-activated {
+    display: block;
+    animation: homeAnimation .8s forwards;
+
+    .space-texts {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 200px;
+        margin-left: 190px;
+        text-align: start;
+        
+        h5 {
+            @include headings(28px, 4.75px);
+            font-weight: 100;
+            color: $second-color;
+        }
+
+        h1 {
+            @include headings(150px, 0px);
+            font-weight: 500;
+            padding-top: 10px;
+        }
+
+        p {
+            @include bodyText;
+            font-weight: 100;
+            padding-top: 10px;
+            color: $second-color;
+        }
+
+        .br-active{
+            display: block;
+        }
+    }
+
+    button {
+        margin-top: 180px;
+        margin-right: 190px;
+        width: 274px;
+        height: 274px;
+        border-radius: 100%;
+        border: none;
+        cursor: pointer;
+        @include homeButton;
+
+        &:hover {
+            transition: 0.5s;
+            box-shadow: 0 0 0 2em rgba(255, 255, 255, 0.152);
+        }
+    }
+}
+
+@keyframes homeAnimation {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+// RESPONSIVE
+.section-activated{
+    .space-texts{
+        @include display (large){
+            margin-left: 0px;
+
+            button{
+                margin-right: 50px;
+            }
+        }
+
+        @include display (medium){
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            h1{
+                font-size: 88px;
+            }
+            button{
+                margin-left: 20px;
+                margin-top: 20px;
+                width: 180px;
+                height: 180px;
+            }
+        }
+
+        @include display(smartphone){
+            h5 {
+                font-size: 20px;
+            }
+            h1 {
+                font-size: 60px;
+            }
+            .br-active{
+                display: none;
+            }
+            button{
+                margin-top: 100px;
+                margin-left: 45px;
+                width: 120px;
+                height: 120px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    }
+    @include media(laptop-height){
+        .space-texts{
+            margin-top: 5.5%;
+            p{
+                .br-active{
+                    display: block;
+                }
+            }
+        }
+}
+
