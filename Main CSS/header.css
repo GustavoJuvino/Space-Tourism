@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
-/* line 1, ../projects/space/Main SCSS/styles.scss */
+/* line 1, ../Projects/Space-Tourism/Main SCSS/styles.scss */
 body,
 main,
 footer,
@@ -11,29 +11,29 @@ li {
   margin: 0px;
 }
 
-/* line 11, ../projects/space/Main SCSS/styles.scss */
+/* line 11, ../Projects/Space-Tourism/Main SCSS/styles.scss */
 ul {
   list-style: none;
 }
 
-/* line 14, ../projects/space/Main SCSS/styles.scss */
+/* line 14, ../Projects/Space-Tourism/Main SCSS/styles.scss */
 a {
   text-decoration: none;
 }
 
-/* line 18, ../projects/space/Main SCSS/styles.scss */
+/* line 18, ../Projects/Space-Tourism/Main SCSS/styles.scss */
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 3, ../projects/space/Main SCSS/header.scss */
+/* line 3, ../Projects/Space-Tourism/Main SCSS/header.scss */
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* line 7, ../projects/space/Main SCSS/header.scss */
+/* line 7, ../Projects/Space-Tourism/Main SCSS/header.scss */
 #header img {
   margin-top: 30px;
   margin-left: 50px;
@@ -41,7 +41,7 @@ a {
   height: 48px;
 }
 
-/* line 13, ../projects/space/Main SCSS/header.scss */
+/* line 13, ../Projects/Space-Tourism/Main SCSS/header.scss */
 #header .divider {
   z-index: 2;
   position: absolute;
@@ -53,7 +53,7 @@ a {
   backdrop-filter: blur(1rem);
 }
 
-/* line 23, ../projects/space/Main SCSS/header.scss */
+/* line 23, ../Projects/Space-Tourism/Main SCSS/header.scss */
 #header nav {
   margin-top: 40px;
   width: 50%;
@@ -62,50 +62,50 @@ a {
   backdrop-filter: blur(1rem);
 }
 
-/* line 30, ../projects/space/Main SCSS/header.scss */
+/* line 30, ../Projects/Space-Tourism/Main SCSS/header.scss */
 #header [data-logo] {
   cursor: pointer;
 }
 
-/* line 33, ../projects/space/Main SCSS/header.scss */
+/* line 33, ../Projects/Space-Tourism/Main SCSS/header.scss */
 #header [data-nav="menu"] {
   display: block;
 }
 
 @media screen and (max-width: 800px) {
-  /* line 33, ../projects/space/Main SCSS/header.scss */
+  /* line 33, ../Projects/Space-Tourism/Main SCSS/header.scss */
   #header [data-nav="menu"] {
     display: none;
   }
 }
 
-/* line 39, ../projects/space/Main SCSS/header.scss */
+/* line 39, ../Projects/Space-Tourism/Main SCSS/header.scss */
 #header [data-nav="close"] {
   display: none;
 }
 
-/* line 42, ../projects/space/Main SCSS/header.scss */
+/* line 42, ../Projects/Space-Tourism/Main SCSS/header.scss */
 #header [data-nav="img"] {
   display: none;
 }
 
-/* line 45, ../projects/space/Main SCSS/header.scss */
+/* line 45, ../Projects/Space-Tourism/Main SCSS/header.scss */
 #header .mobile-activated {
   display: block;
 }
 
-/* line 48, ../projects/space/Main SCSS/header.scss */
+/* line 48, ../Projects/Space-Tourism/Main SCSS/header.scss */
 #header ul {
   display: flex;
   justify-content: center;
 }
 
-/* line 52, ../projects/space/Main SCSS/header.scss */
+/* line 52, ../Projects/Space-Tourism/Main SCSS/header.scss */
 #header .li-activated a {
   color: white;
 }
 
-/* line 55, ../projects/space/Main SCSS/header.scss */
+/* line 55, ../Projects/Space-Tourism/Main SCSS/header.scss */
 #header li {
   margin-left: 48px;
   padding-top: 39px;
@@ -116,7 +116,7 @@ a {
   color: #FFFFFF;
 }
 
-/* line 59, ../projects/space/Main SCSS/header.scss */
+/* line 59, ../Projects/Space-Tourism/Main SCSS/header.scss */
 #header li a {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: regular;
@@ -127,34 +127,34 @@ a {
   color: #D0D6F9;
 }
 
-/* line 63, ../projects/space/Main SCSS/header.scss */
+/* line 63, ../Projects/Space-Tourism/Main SCSS/header.scss */
 #header li a:hover {
   transition: 0.5s;
   color: #FFFFFF;
 }
 
-/* line 68, ../projects/space/Main SCSS/header.scss */
+/* line 68, ../Projects/Space-Tourism/Main SCSS/header.scss */
 #header li span {
   padding-right: 12px;
   font-weight: 600;
 }
 
 @media screen and (max-width: 1228px) {
-  /* line 77, ../projects/space/Main SCSS/header.scss */
+  /* line 77, ../Projects/Space-Tourism/Main SCSS/header.scss */
   #header [data-logo] {
     margin-left: 20px;
   }
 }
 
 @media screen and (max-width: 1228px) {
-  /* line 76, ../projects/space/Main SCSS/header.scss */
+  /* line 76, ../Projects/Space-Tourism/Main SCSS/header.scss */
   #header {
     justify-content: space-between;
   }
 }
 
 @media screen and (max-width: 800px) {
-  /* line 85, ../projects/space/Main SCSS/header.scss */
+  /* line 85, ../Projects/Space-Tourism/Main SCSS/header.scss */
   #header img {
     width: 30px;
     height: 30px;
@@ -162,35 +162,35 @@ a {
 }
 
 @media screen and (max-width: 1228px) {
-  /* line 91, ../projects/space/Main SCSS/header.scss */
+  /* line 91, ../Projects/Space-Tourism/Main SCSS/header.scss */
   #header .divider {
     display: none;
   }
 }
 
 @media screen and (max-width: 860px) {
-  /* line 91, ../projects/space/Main SCSS/header.scss */
+  /* line 91, ../Projects/Space-Tourism/Main SCSS/header.scss */
   #header .divider {
     display: none;
   }
 }
 
 @media screen and (max-width: 1228px) {
-  /* line 99, ../projects/space/Main SCSS/header.scss */
+  /* line 99, ../Projects/Space-Tourism/Main SCSS/header.scss */
   #header nav {
     width: 700px;
   }
 }
 
 @media screen and (max-width: 1228px) {
-  /* line 104, ../projects/space/Main SCSS/header.scss */
+  /* line 104, ../Projects/Space-Tourism/Main SCSS/header.scss */
   #header ul {
     justify-content: center;
   }
 }
 
 @media screen and (max-width: 800px) {
-  /* line 116, ../projects/space/Main SCSS/header.scss */
+  /* line 116, ../Projects/Space-Tourism/Main SCSS/header.scss */
   #header .mobile-activated {
     position: absolute;
     z-index: 2;
@@ -204,13 +204,13 @@ a {
 }
 
 @media screen and (max-width: 525px) {
-  /* line 116, ../projects/space/Main SCSS/header.scss */
+  /* line 116, ../Projects/Space-Tourism/Main SCSS/header.scss */
   #header .mobile-activated {
     width: 100%;
   }
 }
 
-/* line 130, ../projects/space/Main SCSS/header.scss */
+/* line 130, ../Projects/Space-Tourism/Main SCSS/header.scss */
 #header .mobile-activated [data-nav="close"] {
   display: block;
   cursor: pointer;
@@ -219,7 +219,7 @@ a {
 }
 
 @media screen and (max-width: 800px) {
-  /* line 136, ../projects/space/Main SCSS/header.scss */
+  /* line 136, ../Projects/Space-Tourism/Main SCSS/header.scss */
   #header .mobile-activated ul {
     margin-top: 20px;
     display: block;
@@ -228,7 +228,7 @@ a {
 }
 
 @media screen and (max-width: 800px) {
-  /* line 143, ../projects/space/Main SCSS/header.scss */
+  /* line 143, ../Projects/Space-Tourism/Main SCSS/header.scss */
   #header .mobile-activated li {
     margin-left: 48px;
     padding-top: 70px;
@@ -236,14 +236,14 @@ a {
 }
 
 @media screen and (max-width: 800px) {
-  /* line 148, ../projects/space/Main SCSS/header.scss */
+  /* line 148, ../Projects/Space-Tourism/Main SCSS/header.scss */
   #header .mobile-activated li [data-divider] {
     margin-top: 15px;
   }
 }
 
 @media screen and (max-width: 800px) {
-  /* line 156, ../projects/space/Main SCSS/header.scss */
+  /* line 156, ../Projects/Space-Tourism/Main SCSS/header.scss */
   #header [data-nav="img"] {
     display: block;
     margin-right: 50px;
@@ -253,14 +253,14 @@ a {
 }
 
 @media screen and (max-width: 800px) {
-  /* line 166, ../projects/space/Main SCSS/header.scss */
+  /* line 166, ../Projects/Space-Tourism/Main SCSS/header.scss */
   #header .mobile-activated {
     animation: menu-open .3s forwards;
   }
 }
 
 @media screen and (max-width: 525px) {
-  /* line 166, ../projects/space/Main SCSS/header.scss */
+  /* line 166, ../Projects/Space-Tourism/Main SCSS/header.scss */
   #header .mobile-activated {
     animation: menu-open-small .3s forwards;
   }
@@ -288,7 +288,7 @@ a {
   }
 }
 
-/* line 202, ../projects/space/Main SCSS/header.scss */
+/* line 202, ../Projects/Space-Tourism/Main SCSS/header.scss */
 .bar-header {
   margin-top: 32px;
   height: 4px;
@@ -305,7 +305,7 @@ a {
   }
 }
 
-/* line 218, ../projects/space/Main SCSS/header.scss */
+/* line 218, ../Projects/Space-Tourism/Main SCSS/header.scss */
 li:nth-child(2) .bar-header, li:nth-child(4) .bar-header {
   animation: destiny .5s forwards;
 }

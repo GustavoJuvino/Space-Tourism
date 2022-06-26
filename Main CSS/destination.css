@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
-/* line 1, ../projects/space/Main SCSS/styles.scss */
+/* line 1, ../Projects/Space-Tourism/Main SCSS/styles.scss */
 body,
 main,
 footer,
@@ -11,43 +11,43 @@ li {
   margin: 0px;
 }
 
-/* line 11, ../projects/space/Main SCSS/styles.scss */
+/* line 11, ../Projects/Space-Tourism/Main SCSS/styles.scss */
 ul {
   list-style: none;
 }
 
-/* line 14, ../projects/space/Main SCSS/styles.scss */
+/* line 14, ../Projects/Space-Tourism/Main SCSS/styles.scss */
 a {
   text-decoration: none;
 }
 
-/* line 18, ../projects/space/Main SCSS/styles.scss */
+/* line 18, ../Projects/Space-Tourism/Main SCSS/styles.scss */
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 3, ../projects/space/Main SCSS/destination.scss */
+/* line 3, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 7, ../projects/space/Main SCSS/destination.scss */
+/* line 7, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 [data-destination], [data-box], [data-mtexts] {
   display: none;
 }
 
-/* line 12, ../projects/space/Main SCSS/destination.scss */
+/* line 12, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 .section-activated .m-actived {
   display: flex;
 }
 
-/* line 14, ../projects/space/Main SCSS/destination.scss */
+/* line 14, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 .section-activated .m-actived .box {
   display: block;
   animation: box-animation .6s forwards;
 }
 
-/* line 17, ../projects/space/Main SCSS/destination.scss */
+/* line 17, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 .section-activated .m-actived .box span {
   margin-right: 28px;
   font-family: 'Barlow Condensed', sans-serif;
@@ -60,7 +60,7 @@ a {
   font-size: 28px;
 }
 
-/* line 24, ../projects/space/Main SCSS/destination.scss */
+/* line 24, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 .section-activated .m-actived .box h6 {
   margin-left: 145px;
   font-family: 'Bellefair', serif;
@@ -72,13 +72,13 @@ a {
   letter-spacing: 4.72px;
 }
 
-/* line 32, ../projects/space/Main SCSS/destination.scss */
+/* line 32, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 .section-activated .m-actived img {
   margin-top: 98px;
   margin-left: 30%;
 }
 
-/* line 38, ../projects/space/Main SCSS/destination.scss */
+/* line 38, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 .section-activated .m-actived ul, .section-activated .m-actived a {
   display: flex;
   font-family: 'Barlow Condensed', sans-serif;
@@ -89,24 +89,24 @@ a {
   font-size: 26px;
 }
 
-/* line 43, ../projects/space/Main SCSS/destination.scss */
+/* line 43, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 .section-activated .m-actived li {
   margin-right: 35px;
 }
 
-/* line 47, ../projects/space/Main SCSS/destination.scss */
+/* line 47, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 .section-activated .moons-infos {
   margin-top: 200px;
   margin-left: 24%;
 }
 
-/* line 50, ../projects/space/Main SCSS/destination.scss */
+/* line 50, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 .section-activated .moons-infos .moon-texts {
   display: block;
   animation: box-animation .6s forwards;
 }
 
-/* line 53, ../projects/space/Main SCSS/destination.scss */
+/* line 53, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 .section-activated .moons-infos .moon-texts h1 {
   font-family: 'Bellefair', serif;
   font-weight: regular;
@@ -117,7 +117,7 @@ a {
   margin-top: 37px;
 }
 
-/* line 58, ../projects/space/Main SCSS/destination.scss */
+/* line 58, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 .section-activated .moons-infos .moon-texts p {
   font-family: 'Barlow', sans-serif;
   font-weight: regular;
@@ -129,7 +129,7 @@ a {
   letter-spacing: 1.5px;
 }
 
-/* line 64, ../projects/space/Main SCSS/destination.scss */
+/* line 64, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 .section-activated .moons-infos .moon-texts .moons-divider {
   margin-top: 54px;
   width: 80.5%;
@@ -137,7 +137,7 @@ a {
   background-color: #383B4B;
 }
 
-/* line 70, ../projects/space/Main SCSS/destination.scss */
+/* line 70, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 .section-activated .moons-infos .moon-texts .moons-dl {
   display: flex;
   width: 80.5%;
@@ -145,7 +145,7 @@ a {
   margin-top: 28px;
 }
 
-/* line 75, ../projects/space/Main SCSS/destination.scss */
+/* line 75, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 .section-activated .moons-infos .moon-texts .moons-dl .infos {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: regular;
@@ -157,7 +157,7 @@ a {
   font-weight: 100;
 }
 
-/* line 81, ../projects/space/Main SCSS/destination.scss */
+/* line 81, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 .section-activated .moons-infos .moon-texts .moons-dl p {
   font-family: 'Bellefair', serif;
   font-weight: regular;
@@ -168,18 +168,18 @@ a {
 }
 
 @media screen and (max-height: 922px) {
-  /* line 97, ../projects/space/Main SCSS/destination.scss */
+  /* line 97, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived [data-box] h6 {
     margin-top: 0px;
   }
-  /* line 100, ../projects/space/Main SCSS/destination.scss */
+  /* line 100, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived [data-box] img {
     margin-top: 0px;
   }
 }
 
 @media screen and (max-height: 922px) and (max-width: 1040px) {
-  /* line 100, ../projects/space/Main SCSS/destination.scss */
+  /* line 100, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived [data-box] img {
     width: 210px;
     height: 210px;
@@ -188,18 +188,18 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1040px) {
-  /* line 93, ../projects/space/Main SCSS/destination.scss */
+  /* line 93, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived {
     display: block;
   }
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1040px) {
-  /* line 117, ../projects/space/Main SCSS/destination.scss */
+  /* line 117, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived [data-box] {
     text-align: center;
   }
-  /* line 120, ../projects/space/Main SCSS/destination.scss */
+  /* line 120, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived [data-box] h6, .section-activated .m-actived [data-box] span {
     text-align: center;
     margin-left: 0px;
@@ -209,7 +209,7 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1320px) {
-  /* line 127, ../projects/space/Main SCSS/destination.scss */
+  /* line 127, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived [data-box] img {
     width: 300px;
     height: 300px;
@@ -218,7 +218,7 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1040px) {
-  /* line 127, ../projects/space/Main SCSS/destination.scss */
+  /* line 127, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived [data-box] img {
     width: 210px;
     height: 210px;
@@ -227,7 +227,7 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1040px) {
-  /* line 142, ../projects/space/Main SCSS/destination.scss */
+  /* line 142, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived h6, .section-activated .m-actived span {
     font-size: 22px;
     text-align: left;
@@ -235,7 +235,7 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 590px) {
-  /* line 142, ../projects/space/Main SCSS/destination.scss */
+  /* line 142, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived h6, .section-activated .m-actived span {
     margin-left: 0px;
     text-align: left;
@@ -244,7 +244,7 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1320px) {
-  /* line 155, ../projects/space/Main SCSS/destination.scss */
+  /* line 155, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived .moons-infos {
     margin-top: 100px;
     margin-left: 0px;
@@ -254,14 +254,14 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1040px) {
-  /* line 155, ../projects/space/Main SCSS/destination.scss */
+  /* line 155, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived .moons-infos {
     margin-top: 20px;
   }
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1320px) {
-  /* line 167, ../projects/space/Main SCSS/destination.scss */
+  /* line 167, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived .moons-infos ul, .section-activated .m-actived .moons-infos a {
     font-size: 16px;
     justify-content: center;
@@ -269,14 +269,14 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 590px) {
-  /* line 173, ../projects/space/Main SCSS/destination.scss */
+  /* line 173, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived .moons-infos li {
     margin-right: 15px;
   }
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1040px) {
-  /* line 179, ../projects/space/Main SCSS/destination.scss */
+  /* line 179, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived .moons-infos h1 {
     text-align: center;
     font-size: 40px;
@@ -284,21 +284,21 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1320px) {
-  /* line 186, ../projects/space/Main SCSS/destination.scss */
+  /* line 186, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived .moons-infos p {
     font-size: 18px;
   }
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1040px) {
-  /* line 186, ../projects/space/Main SCSS/destination.scss */
+  /* line 186, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived .moons-infos p {
     text-align: center;
   }
 }
 
 @media screen and (max-height: 1368px) and (max-width: 590px) {
-  /* line 186, ../projects/space/Main SCSS/destination.scss */
+  /* line 186, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived .moons-infos p {
     font-size: 15px;
     line-height: 25px;
@@ -306,27 +306,27 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 590px) {
-  /* line 200, ../projects/space/Main SCSS/destination.scss */
+  /* line 200, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived .moons-infos p .br-active {
     display: none;
   }
 }
 
 @media screen and (max-height: 1368px) {
-  /* line 207, ../projects/space/Main SCSS/destination.scss */
+  /* line 207, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived .moons-infos .bar-activated {
     width: 40px;
     height: 4px;
     background-color: #fff;
   }
-  /* line 213, ../projects/space/Main SCSS/destination.scss */
+  /* line 213, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived .moons-infos .moons-dl {
     text-align: center;
   }
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1320px) {
-  /* line 213, ../projects/space/Main SCSS/destination.scss */
+  /* line 213, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived .moons-infos .moons-dl {
     width: 50%;
     margin-left: 23.5%;
@@ -334,14 +334,14 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 590px) {
-  /* line 213, ../projects/space/Main SCSS/destination.scss */
+  /* line 213, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived .moons-infos .moons-dl {
     display: block;
   }
 }
 
 @media screen and (max-height: 1368px) and (max-width: 590px) {
-  /* line 225, ../projects/space/Main SCSS/destination.scss */
+  /* line 225, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived .moons-infos .moons-dl .infos {
     text-align: center;
     font-size: 16px;
@@ -350,7 +350,7 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1320px) {
-  /* line 232, ../projects/space/Main SCSS/destination.scss */
+  /* line 232, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived .moons-infos .moons-dl .infos p {
     font-size: 28px;
     text-align: center;
@@ -358,7 +358,7 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1320px) {
-  /* line 241, ../projects/space/Main SCSS/destination.scss */
+  /* line 241, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived .moons-infos .moons-divider {
     width: 50%;
     margin-left: 23.5%;
@@ -366,44 +366,44 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 590px) {
-  /* line 241, ../projects/space/Main SCSS/destination.scss */
+  /* line 241, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived .moons-infos .moons-divider {
     margin-top: 32px;
   }
 }
 
 @media screen and (max-height: 800px) {
-  /* line 256, ../projects/space/Main SCSS/destination.scss */
+  /* line 256, ../Projects/Space-Tourism/Main SCSS/destination.scss */
   .section-activated .m-actived .moon-texts .br-active {
     display: block;
   }
 }
 
-/* line 265, ../projects/space/Main SCSS/destination.scss */
+/* line 265, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 .bar {
   margin-top: 12px;
   height: 4px;
 }
 
-/* line 270, ../projects/space/Main SCSS/destination.scss */
+/* line 270, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 li:nth-child(1) .bar {
   background-color: rgba(255, 255, 255, 0.635);
   animation: bar-animate1 .3s forwards;
 }
 
-/* line 276, ../projects/space/Main SCSS/destination.scss */
+/* line 276, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 li:nth-child(2) .bar {
   background-color: rgba(228, 172, 88, 0.635);
   animation: bar-animate1 .3s forwards;
 }
 
-/* line 282, ../projects/space/Main SCSS/destination.scss */
+/* line 282, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 li:nth-child(3) .bar {
   background-color: rgba(189, 223, 219, 0.635);
   animation: bar-animate2 .3s forwards;
 }
 
-/* line 288, ../projects/space/Main SCSS/destination.scss */
+/* line 288, ../Projects/Space-Tourism/Main SCSS/destination.scss */
 li:nth-child(4) .bar {
   background-color: rgba(225, 205, 86, 0.635);
   animation: bar-animate3 .3s forwards;

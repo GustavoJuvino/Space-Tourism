@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
-/* line 1, ../projects/space/Main SCSS/styles.scss */
+/* line 1, ../Projects/Space-Tourism/Main SCSS/styles.scss */
 body,
 main,
 footer,
@@ -11,17 +11,17 @@ li {
   margin: 0px;
 }
 
-/* line 11, ../projects/space/Main SCSS/styles.scss */
+/* line 11, ../Projects/Space-Tourism/Main SCSS/styles.scss */
 ul {
   list-style: none;
 }
 
-/* line 14, ../projects/space/Main SCSS/styles.scss */
+/* line 14, ../Projects/Space-Tourism/Main SCSS/styles.scss */
 a {
   text-decoration: none;
 }
 
-/* line 18, ../projects/space/Main SCSS/styles.scss */
+/* line 18, ../Projects/Space-Tourism/Main SCSS/styles.scss */
 ::-webkit-scrollbar {
   display: none;
 }

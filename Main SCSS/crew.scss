@@ -218,9 +218,9 @@
                     height: 380px;
                 }
                 @include crew-media(smartphone){
-                    width: 50%;
+                    width: 60%;
                     height: 30%;
-                    margin-top: 10px;
+                    margin-top: 20px;
                 }
         }
             @include tech-media(nest-responsive){
@@ -264,7 +264,7 @@
                 @include crew-media(smartphone){
                     width: 50%;
                     height: auto;
-                    margin-top: 0px;
+                    margin-top: 50px;
                 }
             }
         }
@@ -306,9 +306,9 @@
                     height: auto;
                 }
                 @include crew-media(smartphone){
-                    width: 45%;
+                    width: 60%;
                     height: auto;
-                    margin-top: 0px;
+                    margin-top: 50px;
                 }
             }
         }
@@ -350,7 +350,8 @@
                 }
                 @include crew-media(smartphone){
                     height: auto;
-                    width: 70%;
+                    width: 60%;
+                    margin-top: 50px;
                 }
             }
         }

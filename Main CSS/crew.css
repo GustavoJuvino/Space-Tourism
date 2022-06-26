@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
-/* line 1, ../projects/space/Main SCSS/styles.scss */
+/* line 1, ../Projects/Space-Tourism/Main SCSS/styles.scss */
 body,
 main,
 footer,
@@ -11,44 +11,44 @@ li {
   margin: 0px;
 }
 
-/* line 11, ../projects/space/Main SCSS/styles.scss */
+/* line 11, ../Projects/Space-Tourism/Main SCSS/styles.scss */
 ul {
   list-style: none;
 }
 
-/* line 14, ../projects/space/Main SCSS/styles.scss */
+/* line 14, ../Projects/Space-Tourism/Main SCSS/styles.scss */
 a {
   text-decoration: none;
 }
 
-/* line 18, ../projects/space/Main SCSS/styles.scss */
+/* line 18, ../Projects/Space-Tourism/Main SCSS/styles.scss */
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 3, ../projects/space/Main SCSS/crew.scss */
+/* line 3, ../Projects/Space-Tourism/Main SCSS/crew.scss */
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 7, ../projects/space/Main SCSS/crew.scss */
+/* line 7, ../Projects/Space-Tourism/Main SCSS/crew.scss */
 [data-crew], [data-person] {
   display: none;
 }
 
-/* line 13, ../projects/space/Main SCSS/crew.scss */
+/* line 13, ../Projects/Space-Tourism/Main SCSS/crew.scss */
 .section-activated .main-crew {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 16, ../projects/space/Main SCSS/crew.scss */
+/* line 16, ../Projects/Space-Tourism/Main SCSS/crew.scss */
 .section-activated .main-crew .crew-activated {
   display: block;
   animation: box-animation .6s forwards;
 }
 
-/* line 19, ../projects/space/Main SCSS/crew.scss */
+/* line 19, ../Projects/Space-Tourism/Main SCSS/crew.scss */
 .section-activated .main-crew .crew-activated h6 {
   margin-top: 60px;
   margin-left: 145px;
@@ -61,7 +61,7 @@ a {
   letter-spacing: 4.72px;
 }
 
-/* line 27, ../projects/space/Main SCSS/crew.scss */
+/* line 27, ../Projects/Space-Tourism/Main SCSS/crew.scss */
 .section-activated .main-crew .crew-activated span {
   margin-right: 28px;
   font-family: 'Barlow Condensed', sans-serif;
@@ -74,7 +74,7 @@ a {
   font-size: 28px;
 }
 
-/* line 34, ../projects/space/Main SCSS/crew.scss */
+/* line 34, ../Projects/Space-Tourism/Main SCSS/crew.scss */
 .section-activated .main-crew .crew-activated h2 {
   margin-top: 100px;
   margin-left: 145px;
@@ -87,7 +87,7 @@ a {
   color: #D0D6F9;
 }
 
-/* line 41, ../projects/space/Main SCSS/crew.scss */
+/* line 41, ../Projects/Space-Tourism/Main SCSS/crew.scss */
 .section-activated .main-crew .crew-activated h1 {
   margin-left: 145px;
   font-family: 'Bellefair', serif;
@@ -99,7 +99,7 @@ a {
   color: #FFFFFF;
 }
 
-/* line 47, ../projects/space/Main SCSS/crew.scss */
+/* line 47, ../Projects/Space-Tourism/Main SCSS/crew.scss */
 .section-activated .main-crew .crew-activated p {
   margin-top: 27px;
   margin-left: 145px;
@@ -113,14 +113,14 @@ a {
   letter-spacing: 1.5px;
 }
 
-/* line 56, ../projects/space/Main SCSS/crew.scss */
+/* line 56, ../Projects/Space-Tourism/Main SCSS/crew.scss */
 .section-activated .main-crew .circle {
   display: flex;
   margin-left: 105px;
   margin-top: 80px;
 }
 
-/* line 60, ../projects/space/Main SCSS/crew.scss */
+/* line 60, ../Projects/Space-Tourism/Main SCSS/crew.scss */
 .section-activated .main-crew .circle [data-circle] {
   width: 30px;
   height: 30px;
@@ -131,50 +131,50 @@ a {
   transition: 0.9s;
 }
 
-/* line 68, ../projects/space/Main SCSS/crew.scss */
+/* line 68, ../Projects/Space-Tourism/Main SCSS/crew.scss */
 .section-activated .main-crew .circle [data-circle]:hover {
   background-color: white;
 }
 
-/* line 72, ../projects/space/Main SCSS/crew.scss */
+/* line 72, ../Projects/Space-Tourism/Main SCSS/crew.scss */
 .section-activated .main-crew .circle .actived {
   background-color: white;
   animation: circle-animation .1s forwards;
 }
 
-/* line 77, ../projects/space/Main SCSS/crew.scss */
+/* line 77, ../Projects/Space-Tourism/Main SCSS/crew.scss */
 .section-activated .main-crew .img-crew {
   display: block;
   animation: box-animation .6s forwards;
 }
 
-/* line 82, ../projects/space/Main SCSS/crew.scss */
+/* line 82, ../Projects/Space-Tourism/Main SCSS/crew.scss */
 .section-activated .main-crew .douglas-img {
   margin-top: 168px;
   margin-right: 100px;
 }
 
-/* line 86, ../projects/space/Main SCSS/crew.scss */
+/* line 86, ../Projects/Space-Tourism/Main SCSS/crew.scss */
 .section-activated .main-crew .mark-img {
   margin-right: 100px;
   margin-top: 228px;
 }
 
-/* line 90, ../projects/space/Main SCSS/crew.scss */
+/* line 90, ../Projects/Space-Tourism/Main SCSS/crew.scss */
 .section-activated .main-crew .victor-img {
   width: 499px;
   margin-right: 100px;
   margin-top: 282px;
 }
 
-/* line 95, ../projects/space/Main SCSS/crew.scss */
+/* line 95, ../Projects/Space-Tourism/Main SCSS/crew.scss */
 .section-activated .main-crew .ansari-img {
   margin-right: 100px;
   margin-top: 265px;
 }
 
 @media screen and (max-width: 800px) {
-  /* line 104, ../projects/space/Main SCSS/crew.scss */
+  /* line 104, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew {
     display: block;
     text-align: center;
@@ -182,114 +182,114 @@ a {
 }
 
 @media screen and (max-width: 1316px) {
-  /* line 109, ../projects/space/Main SCSS/crew.scss */
+  /* line 109, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts {
     margin-top: 20px;
   }
-  /* line 112, ../projects/space/Main SCSS/crew.scss */
+  /* line 112, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts h6 {
     margin-left: 60px;
   }
-  /* line 115, ../projects/space/Main SCSS/crew.scss */
+  /* line 115, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts h2, .section-activated .main-crew .crew-texts h1, .section-activated .main-crew .crew-texts p {
     margin-left: 60px;
   }
-  /* line 118, ../projects/space/Main SCSS/crew.scss */
+  /* line 118, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts .circle {
     margin-left: 35px;
   }
-  /* line 121, ../projects/space/Main SCSS/crew.scss */
+  /* line 121, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts .br-active {
     display: contents;
   }
 }
 
 @media screen and (max-width: 1138px) {
-  /* line 126, ../projects/space/Main SCSS/crew.scss */
+  /* line 126, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts .circle {
     margin-top: 40px;
     margin-left: 20px;
   }
-  /* line 130, ../projects/space/Main SCSS/crew.scss */
+  /* line 130, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts .br-active {
     display: contents;
   }
 }
 
 @media screen and (max-width: 800px) {
-  /* line 135, ../projects/space/Main SCSS/crew.scss */
+  /* line 135, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts h6, .section-activated .main-crew .crew-texts h2, .section-activated .main-crew .crew-texts h1, .section-activated .main-crew .crew-texts p {
     margin-left: 0px;
   }
-  /* line 138, ../projects/space/Main SCSS/crew.scss */
+  /* line 138, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts h6, .section-activated .main-crew .crew-texts span {
     font-size: 28px;
   }
-  /* line 141, ../projects/space/Main SCSS/crew.scss */
+  /* line 141, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts h2 {
     margin-top: 0px;
     font-size: 28px;
   }
-  /* line 145, ../projects/space/Main SCSS/crew.scss */
+  /* line 145, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts h1 {
     font-size: 42px;
   }
-  /* line 148, ../projects/space/Main SCSS/crew.scss */
+  /* line 148, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts p {
     font-size: 18px;
     line-height: 26px;
   }
-  /* line 152, ../projects/space/Main SCSS/crew.scss */
+  /* line 152, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts .circle {
     display: flex;
     justify-content: center;
     margin-right: 40px;
   }
-  /* line 157, ../projects/space/Main SCSS/crew.scss */
+  /* line 157, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts .br-active {
     display: block;
   }
 }
 
 @media screen and (max-width: 550px) {
-  /* line 163, ../projects/space/Main SCSS/crew.scss */
+  /* line 163, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts h6, .section-activated .main-crew .crew-texts span {
     margin-top: 0px;
     font-size: 18px;
   }
-  /* line 167, ../projects/space/Main SCSS/crew.scss */
+  /* line 167, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts h2 {
     font-size: 18px;
   }
-  /* line 170, ../projects/space/Main SCSS/crew.scss */
+  /* line 170, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts p {
     font-size: 16px;
   }
-  /* line 173, ../projects/space/Main SCSS/crew.scss */
+  /* line 173, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts h1 {
     font-size: 20px;
   }
-  /* line 176, ../projects/space/Main SCSS/crew.scss */
+  /* line 176, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts [data-circle] {
     width: 15px;
     height: 15px;
     margin-left: 12%;
   }
-  /* line 181, ../projects/space/Main SCSS/crew.scss */
+  /* line 181, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .crew-texts .br-active {
     display: none;
   }
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1316px) {
-  /* line 186, ../projects/space/Main SCSS/crew.scss */
+  /* line 186, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .douglas-img {
     margin-right: 0px;
   }
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1138px) {
-  /* line 186, ../projects/space/Main SCSS/crew.scss */
+  /* line 186, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .douglas-img {
     height: 572px;
     width: auto;
@@ -298,7 +298,7 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 800px) {
-  /* line 186, ../projects/space/Main SCSS/crew.scss */
+  /* line 186, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .douglas-img {
     margin-top: 33px;
     height: 450px;
@@ -306,7 +306,7 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 550px) {
-  /* line 186, ../projects/space/Main SCSS/crew.scss */
+  /* line 186, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .douglas-img {
     width: 65%;
     height: 30%;
@@ -315,7 +315,7 @@ a {
 }
 
 @media screen and (max-height: 922px) {
-  /* line 186, ../projects/space/Main SCSS/crew.scss */
+  /* line 186, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .douglas-img {
     margin-top: 202px;
     height: 580px;
@@ -323,7 +323,7 @@ a {
 }
 
 @media screen and (max-height: 922px) and (max-width: 1138px) {
-  /* line 186, ../projects/space/Main SCSS/crew.scss */
+  /* line 186, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .douglas-img {
     height: 572px;
     width: auto;
@@ -332,7 +332,7 @@ a {
 }
 
 @media screen and (max-height: 922px) and (max-width: 800px) {
-  /* line 186, ../projects/space/Main SCSS/crew.scss */
+  /* line 186, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .douglas-img {
     margin-top: 15px;
     height: 380px;
@@ -340,30 +340,30 @@ a {
 }
 
 @media screen and (max-height: 922px) and (max-width: 550px) {
-  /* line 186, ../projects/space/Main SCSS/crew.scss */
+  /* line 186, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .douglas-img {
-    width: 50%;
+    width: 60%;
     height: 30%;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 }
 
 @media screen and (max-height: 800px) {
-  /* line 186, ../projects/space/Main SCSS/crew.scss */
+  /* line 186, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .douglas-img {
     margin-top: 80px;
   }
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1316px) {
-  /* line 230, ../projects/space/Main SCSS/crew.scss */
+  /* line 230, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .mark-img {
     margin-right: 0px;
   }
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1138px) {
-  /* line 230, ../projects/space/Main SCSS/crew.scss */
+  /* line 230, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .mark-img {
     margin-top: 369px;
     height: 500px;
@@ -371,7 +371,7 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 800px) {
-  /* line 230, ../projects/space/Main SCSS/crew.scss */
+  /* line 230, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .mark-img {
     height: 400px;
     margin-top: 88px;
@@ -380,7 +380,7 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 550px) {
-  /* line 230, ../projects/space/Main SCSS/crew.scss */
+  /* line 230, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .mark-img {
     width: 65%;
     height: 30%;
@@ -389,7 +389,7 @@ a {
 }
 
 @media screen and (max-height: 922px) {
-  /* line 230, ../projects/space/Main SCSS/crew.scss */
+  /* line 230, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .mark-img {
     margin-top: 202px;
     height: 580px;
@@ -397,7 +397,7 @@ a {
 }
 
 @media screen and (max-height: 922px) and (max-width: 1138px) {
-  /* line 230, ../projects/space/Main SCSS/crew.scss */
+  /* line 230, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .mark-img {
     margin-top: 334px;
     height: 448px;
@@ -405,7 +405,7 @@ a {
 }
 
 @media screen and (max-height: 922px) and (max-width: 800px) {
-  /* line 230, ../projects/space/Main SCSS/crew.scss */
+  /* line 230, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .mark-img {
     height: 370px;
     margin-top: 30px;
@@ -414,23 +414,23 @@ a {
 }
 
 @media screen and (max-height: 922px) and (max-width: 550px) {
-  /* line 230, ../projects/space/Main SCSS/crew.scss */
+  /* line 230, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .mark-img {
     width: 50%;
     height: auto;
-    margin-top: 0px;
+    margin-top: 50px;
   }
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1316px) {
-  /* line 271, ../projects/space/Main SCSS/crew.scss */
+  /* line 271, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .victor-img {
     margin-right: 0px;
   }
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1138px) {
-  /* line 271, ../projects/space/Main SCSS/crew.scss */
+  /* line 271, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .victor-img {
     margin-top: 340px;
     width: 450px;
@@ -439,7 +439,7 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 800px) {
-  /* line 271, ../projects/space/Main SCSS/crew.scss */
+  /* line 271, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .victor-img {
     margin-top: 45px;
     width: 350px;
@@ -448,7 +448,7 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 550px) {
-  /* line 271, ../projects/space/Main SCSS/crew.scss */
+  /* line 271, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .victor-img {
     width: 70%;
     margin-top: 0px;
@@ -456,21 +456,21 @@ a {
 }
 
 @media screen and (max-height: 922px) {
-  /* line 271, ../projects/space/Main SCSS/crew.scss */
+  /* line 271, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .victor-img {
     margin-top: 195px;
   }
 }
 
 @media screen and (max-height: 922px) and (max-width: 1316px) {
-  /* line 271, ../projects/space/Main SCSS/crew.scss */
+  /* line 271, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .victor-img {
     margin-right: 0px;
   }
 }
 
 @media screen and (max-height: 922px) and (max-width: 1138px) {
-  /* line 271, ../projects/space/Main SCSS/crew.scss */
+  /* line 271, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .victor-img {
     width: 380px;
     margin-top: 332px;
@@ -478,7 +478,7 @@ a {
 }
 
 @media screen and (max-height: 922px) and (max-width: 800px) {
-  /* line 271, ../projects/space/Main SCSS/crew.scss */
+  /* line 271, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .victor-img {
     margin-top: 30px;
     width: 285px;
@@ -487,23 +487,23 @@ a {
 }
 
 @media screen and (max-height: 922px) and (max-width: 550px) {
-  /* line 271, ../projects/space/Main SCSS/crew.scss */
+  /* line 271, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .victor-img {
-    width: 45%;
+    width: 60%;
     height: auto;
-    margin-top: 0px;
+    margin-top: 50px;
   }
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1316px) {
-  /* line 315, ../projects/space/Main SCSS/crew.scss */
+  /* line 315, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .ansari-img {
     margin-right: 0px;
   }
 }
 
 @media screen and (max-height: 1368px) and (max-width: 1138px) {
-  /* line 315, ../projects/space/Main SCSS/crew.scss */
+  /* line 315, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .ansari-img {
     height: 500px;
     width: auto;
@@ -512,7 +512,7 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 800px) {
-  /* line 315, ../projects/space/Main SCSS/crew.scss */
+  /* line 315, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .ansari-img {
     margin-top: 22px;
     height: 460px;
@@ -520,7 +520,7 @@ a {
 }
 
 @media screen and (max-height: 1368px) and (max-width: 550px) {
-  /* line 315, ../projects/space/Main SCSS/crew.scss */
+  /* line 315, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .ansari-img {
     width: 85%;
     height: auto;
@@ -528,14 +528,14 @@ a {
 }
 
 @media screen and (max-height: 922px) {
-  /* line 315, ../projects/space/Main SCSS/crew.scss */
+  /* line 315, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .ansari-img {
     width: 500px;
   }
 }
 
 @media screen and (max-height: 922px) and (max-width: 1316px) {
-  /* line 315, ../projects/space/Main SCSS/crew.scss */
+  /* line 315, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .ansari-img {
     margin-right: 0px;
     margin-top: 240px;
@@ -543,7 +543,7 @@ a {
 }
 
 @media screen and (max-height: 922px) and (max-width: 1138px) {
-  /* line 315, ../projects/space/Main SCSS/crew.scss */
+  /* line 315, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .ansari-img {
     margin-top: 330px;
     height: 440px;
@@ -552,7 +552,7 @@ a {
 }
 
 @media screen and (max-height: 922px) and (max-width: 800px) {
-  /* line 315, ../projects/space/Main SCSS/crew.scss */
+  /* line 315, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .ansari-img {
     margin-top: 5px;
     height: 380px;
@@ -560,10 +560,11 @@ a {
 }
 
 @media screen and (max-height: 922px) and (max-width: 550px) {
-  /* line 315, ../projects/space/Main SCSS/crew.scss */
+  /* line 315, ../Projects/Space-Tourism/Main SCSS/crew.scss */
   .section-activated .main-crew .ansari-img {
     height: auto;
-    width: 70%;
+    width: 60%;
+    margin-top: 50px;
   }
 }
 
